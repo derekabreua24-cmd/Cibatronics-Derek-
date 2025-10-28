@@ -1,3 +1,5 @@
 {
-   drive.tankDrive(-joystick.getRawAxis(1), joystick.getRawAxis(3));
+   double rotation = joystick.getRawAxis(1);
+   double throttle = -joystick.getRawAxis(3);
+   drive.arcadeDrive(throttle, rotation);
   }
