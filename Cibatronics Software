@@ -1,0 +1,19 @@
+if (timer.get() < 2.0) {
+      drive.tankDrive(0.6, 0.6); 
+    } 
+      else if (time < 4.0) {
+        drive.tankDrive(0.0, 0.0);
+    }
+      else if (time < 6.0) {
+        drive.arcadeDrive(0.0, 0.6);
+    } 
+      else if (time < 8.0) {
+        drive.tankDrive(0.0, 0.0);
+    }
+      else if (time < 10.0) {
+        drive.tankDrive(0.6, 0.6);
+    }
+        else {
+          drive.tankDrive(0.0, 0.0);
+      }
+  }
