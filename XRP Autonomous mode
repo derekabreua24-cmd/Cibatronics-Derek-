@@ -1,3 +1,6 @@
+{
+double time = timer.get(); 
+
 if (timer.get() < 2.0) {
       drive.tankDrive(0.6, 0.6); 
     } 
